@@ -53,7 +53,7 @@ tmux attach-session -t president
 **手順1: President認証**
 ```bash
 # まずPRESIDENTで認証を実施
-tmux send-keys -t president 'claude' C-m
+tmux send-keys -t president 'claude　--dangerously-skip-permissions' C-m
 ```
 認証プロンプトに従って許可を与えてください。
 
