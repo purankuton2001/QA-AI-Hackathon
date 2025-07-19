@@ -37,4 +37,4 @@ PRESIDENTに以下のメッセージを送信してプロジェクトを開始�
 ## 期待される成果物
 - 各workerによる専門評価レポート
 - 統合評価レポート（重要課題とリリース判定を含む）
-- レポート保存場所: `./tmp/ecommerce_test_results/` 
+- レポート保存場所: `./tmp/ecommerce_test_results/`
