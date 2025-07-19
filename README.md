@@ -50,9 +50,8 @@ cd qa-ai-hackathon
 tmux send-keys -t president 'claude' C-m
 
 # 2. 認証完了後、全エージェント一括起動
-tmux list-panes -t multiagent:agents -F '#{pane_id}' | while read pane; do
-    tmux send-keys -t "$pane" 'claude' C-m
-done
+# 認証完了後、multiagentセッションを一括起動
+for i in {0..3}; do tmux send-keys -t multiagent:0.$i 'claude' C-m; done
 ```
 
 ### 3. システム動作確認
